@@ -1,0 +1,49 @@
+Project Summary: Analysis of Friday Sales Data
+
+Objective
+This project aims to analyze Friday sales data using Python to extract valuable market insights. By performing exploratory data analysis (EDA), we can derive meaningful patterns and trends that help in understanding customer behavior and making informed business decisions.
+
+Data Overview
+- Dataset Size: 5,50,069 rows and 12 columns
+- Libraries Used: Pandas, Matplotlib, Seaborn
+
+Data Cleaning and Analysing Columns
+We started by cleaning the data to remove null and unwanted entries, ensuring our dataset was ready for analysis. Key steps included:
+- Removing null values using the dropna() function.
+- Checking column names, data types, and unique values using functions like unique() and nunique().
+
+Exploratory Data Analysis
+
+Analyzing Gender
+- Objective: Determine purchasing trends based on gender.
+- Method: Utilized the groupby function to aggregate data by gender and visualized results with pie charts and bar plots.
+- Findings: The analysis showed distinct purchasing patterns between male and female customers.
+
+Analyzing Age & Marital Status
+- Objective: Identify which age groups and marital statuses have higher purchasing frequencies and amounts.
+- Method: Grouped data by age and marital status, visualized using pie charts and bar plots.
+- Findings: 
+  - The majority of purchases were made by unmarried individuals (60%), while married individuals made up 40%.
+  - Certain age groups were more active in making purchases.
+
+Multi-Column Analysis
+- Objective: Examine interactions between multiple variables.
+- Method: Used the Seaborn library to create detailed visualizations combining various columns like age and gender with the hue parameter.
+- Findings: Enhanced understanding of how age and gender together impact purchasing behavior.
+
+Occupation and Products Analysis
+- Objective: Analyze purchasing patterns based on occupation and product types.
+- Method: Employed groupby and countplot functions from Seaborn for data visualization.
+- Findings: Identified which occupations and products had the highest purchasing amounts and frequencies.
+
+Combining Gender & Marital Status
+- Objective: Explore the combined impact of gender and marital status on purchasing behavior.
+- Method: Created visualizations using Seaborn’s countplot to uncover deeper insights.
+- Findings: Men, particularly unmarried, were the highest spenders, followed by married men, unmarried women, and married women.
+
+Conclusion
+Our comprehensive analysis revealed that:
+- Unmarried men are the top spenders in Black Friday sales, followed by married men, unmarried women, and married women.
+- These insights can guide targeted marketing efforts, focusing promotions primarily on unmarried male customers to maximize sales.
+
+This project demonstrates the power of Python in data analysis and the importance of understanding customer demographics to drive strategic business decisions.
